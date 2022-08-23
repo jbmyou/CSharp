@@ -36,7 +36,6 @@
             this.backgroundButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.showButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tableLayoutPanel1.SuspendLayout();
@@ -77,9 +76,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(3, 615);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 16);
+            this.checkBox1.Size = new System.Drawing.Size(88, 16);
             this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Stretch";
+            this.checkBox1.Text = "창에 맞추기";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -89,7 +88,6 @@
             this.flowLayoutPanel1.Controls.Add(this.backgroundButton);
             this.flowLayoutPanel1.Controls.Add(this.clearButton);
             this.flowLayoutPanel1.Controls.Add(this.showButton);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(193, 615);
@@ -139,15 +137,7 @@
             this.showButton.TabIndex = 0;
             this.showButton.Text = "사진 표시";
             this.showButton.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(695, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 12);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.showButton.Click += new System.EventHandler(this.showButton_Click_1);
             // 
             // openFileDialog1
             // 
@@ -186,7 +176,6 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Label label1;
     }
 }
 
